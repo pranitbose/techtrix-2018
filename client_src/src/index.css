@@ -12,11 +12,29 @@ body {
   background: #000205;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {
   color: #fff;
+}
+
+@font-face {
+  font-family: latina;
+  src: url('./assets/fonts/neo-latina.ttf');
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.preloader-wrapper.big {
+  display: flex;
+  top: 45%;
+  margin: auto;
 }
 
 .bgOverlay {
@@ -25,8 +43,8 @@ a {
   left: 0;
   width: 100%;
   min-height: 100%;
-  background: #000205;
-  opacity: 0.9;
+  background: #000208;
+  opacity: 0.85;
 }
 
 .contentWrap {
@@ -34,12 +52,35 @@ a {
   top: 64px;
   width: 100%;
   color: white;
-  overflow-y: auto;
+  overflow-y: hidden;
+}
+
+.container {
+  height: 100%;
+}
+
+.section {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.amber-glow-text {
+  color: #ffb300;
+  text-shadow: 0px 0px 4px #ff1500;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
+  height: 0px;
 }
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 5px #64dd17;

@@ -11,6 +11,6 @@ const Fade = ({ location, children }) => (
         { children }
     </CSSTransition>
   </TransitionGroup>
-)
+);
 
 export default Fade;

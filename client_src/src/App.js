@@ -4,6 +4,7 @@ import './App.css';
 import './index.css';
 import BackgroundCover from './components/BackgroundCover';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Main from './components/Main';
 
 const App = withRouter(({ location }) => (
@@ -11,6 +12,7 @@ const App = withRouter(({ location }) => (
     <BackgroundCover />
     <Navbar />
     <Main location={location} />
+    <Footer />
   </div>
 ));
 

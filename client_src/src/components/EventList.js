@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from './Slider';
 import '../assets/css/EventList.css';
 
@@ -18,10 +19,10 @@ const EventList = (props) => (
           {props.eventCategory.map((_event) =>
             <div key={_event.id} className='slide white-text'>
               <div className='slide-content'>
-                <h2 className='amber-text'>{props.categoryName}</h2>
-                <i className="material-icons">{_event.icon}</i>
+                <h2 className='amber-glow-text'>{props.categoryName}</h2>
+                <i className="material-icons event-icon">{_event.icon}</i>
                 <div className='eventBtn'>
-                  <a href="#" className='btn btn-large waves-effect amber black-text'>{_event.name}</a>
+                  <Link to={`/events/${_event.name.replace(/\s+/g, '-').replace(/'|\./g, '_').toLowerCase()}`}  className='btn btn-large waves-effect black-text event-link'>{_event.name}</Link>
                 </div>
               </div>
             </div>

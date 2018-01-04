@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "google-maps-react": "^1.1.2",
     "jquery": "^3.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-fullpage": "^0.1.18",
+    "react-materialize": "^1.1.2",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
+    "react-tippy": "^1.2.2",
     "react-transition-group": "^2.2.1"
   },
   "scripts": {

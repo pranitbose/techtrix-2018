@@ -1,3 +1,219 @@
 .Contact {
-  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contactWrapper {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mapWrapper {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.mapWrapper a {
+  color: #ffa000;
+}
+.mapWrapper a:hover {
+  color: white;
+}
+
+#slider7 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-content h3 {
+  margin-top: 2.5rem;
+  font-family: latina;
+}
+.slide-content .teamMembers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+}
+.slide-content .teamMembers .card {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  box-shadow: 0 0 15px 2px #ffa000;
+}
+.slide-content .teamMembers .card:hover {
+  box-shadow: 0 0 15px 2px #fff;
+}
+.slide-content .teamMembers img {
+  width: 62%;
+  height: 62%;
+  margin: auto;
+}
+.slide-content .teamMembers .card-content .card-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: left;
+  clear: both;
+}
+.slide-content .teamMembers .card-content p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+.slide-content .teamMembers .card-reveal .card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.slide-content .teamMembers .card-reveal p {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.slide-content .teamMembers .card-reveal .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 530px) and (orientation: portrait) {
+  .slide-content h3 {
+    font-size: 1.8rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .slide-content .teamMembers {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .slide-content .teamMembers .card {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+  }
+  .slide-content .teamMembers img {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
+  .slide-content .teamMembers .card-content {
+    padding: 6px;
+  }
+  .slide-content .teamMembers .card-content .card-title {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .slide-content .teamMembers .card-content p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .slide-content .teamMembers .vertical-more {
+    display: none;
+  }
+  .slide-content .teamMembers .card-reveal {
+    padding: 9px;
+  }
+  .slide-content .teamMembers .card-reveal .card-title {
+    font-size: 0.8rem;
+  }
+  .slide-content .teamMembers .card-reveal p {
+    font-size: 0.7rem;
+  }
+  .slide-content .teamMembers .card-reveal i {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1030px) and (orientation: portrait) {
+  .slide-content h3 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .slide-content .teamMembers {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+  .slide-content .teamMembers .card {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+  }
+  .slide-content .teamMembers .card-content .card-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .slide-content .teamMembers .card-content p {
+    text-align: center;
+  }
+  .slide-content .teamMembers .vertical-more {
+    display: none;
+  }
+}
+@media only screen and (min-height: 270px) and (max-height: 480px) and (orientation: landscape) {
+  .slide-content .teamMembers .col.s8 {
+    width: 50%;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+  }
+  .slide-content h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  .slide-content .teamMembers {
+    margin-top: 2rem;
+    padding-left: 16.6666666667%;
+    padding-right: 16.6666666667%;
+    margin-bottom: 2rem;
+  }
+  .slide-content .teamMembers .card {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+  }
+  .slide-content .teamMembers .card-content {
+    padding: 6px;
+  }
+  .slide-content .teamMembers .card-content .card-title {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .slide-content .teamMembers .card-content p {
+    display: none;
+  }
+  .slide-content .teamMembers .vertical-more {
+    display: none;
+  }
+  .slide-content .teamMembers .card-reveal {
+    padding: 6px;
+  }
+  .slide-content .teamMembers .card-reveal .card-title {
+    font-size: 0.8rem;
+  }
+  .slide-content .teamMembers .card-reveal p {
+    font-size: 0.7rem;
+  }
+  .slide-content .teamMembers .card-reveal i {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-height: 550px) and (max-height: 620px) and (orientation: landscape) {
+  .slide-content h3 {
+    margin-top: 1.5rem;
+  }
 }

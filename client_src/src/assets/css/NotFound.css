@@ -1,0 +1,7 @@
+.NotFound {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000208;
+  opacity: 0.95;
+}

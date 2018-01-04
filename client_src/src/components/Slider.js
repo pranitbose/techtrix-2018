@@ -7,9 +7,11 @@ class Slider extends Component {
     this.initSlider();
     this.prevBtn.on('click', this.prev);
     this.nextBtn.on('click', this.next);
-    $(window).resize(() => {
-      this.sliderContainer.css('width', (this.numOfSlides*100)+'%');
-    });
+    window.addEventListener('resize', this._handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._handleResize);
   }
 
   initSlider() {
@@ -23,6 +25,12 @@ class Slider extends Component {
     this.animationSpeed = 1000;
     this.sliderContainer.css('width', (this.numOfSlides*100)+'%');
     this.prevBtn.hide();
+  }
+
+  _handleResize = () => {
+    let slideWidth = this.slides[0].clientWidth;
+    this.sliderContainer.css('margin-left', (-1) * slideWidth * (this.slideIndex - 1));
+    this.sliderContainer.css('width', (this.numOfSlides*100)+'%');
   }
 
   prev = (e) => {

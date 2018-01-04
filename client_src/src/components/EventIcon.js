@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import '../assets/css/EventIcon.css';
 
 class EventIcon extends Component {
-  componentDidMount() {
-    let pHeight = $('.bgOverlay').height() - 64;
+  adjust = () => {
+    let width = window.innerWidth;
+    let topHeight = 64;
+    if (width <= 800) {
+      topHeight = 48;
+    }
+    let pHeight = window.innerHeight - topHeight;
     $('#iconFrame').css('position', 'fixed');
-    $('#iconFrame').css('top', '50%').css('top', '+=32px');
+    if (width <= 800) {
+      $('#iconFrame').css('top', '50%').css('top', '+=24px');
+    }
+    else {
+      $('#iconFrame').css('top', '50%').css('top', '+=32px');
+    }
     $('#iconFrame').css('left', '50%');
     $('#iconFrame').css({'transform': 'translate(-50%,-50%)'});
     $('#iconFrame').css('width', '55%');
-    $('#iconFrame').css('height', pHeight*0.55);
+    $('#iconFrame').css('height', Math.round(pHeight*0.55));
     $('#iconFrame').css('z-index', '1');
-    $(window).resize(() => {
-      let pHeight = $('.bgOverlay').height() - 64;
-      $('#iconFrame').css('position', 'fixed');
-      $('#iconFrame').css('top', '50%').css('top', '+=32px');
-      $('#iconFrame').css('left', '50%');
-      $('#iconFrame').css({'transform': 'translate(-50%,-50%)'});
-      $('#iconFrame').css('width', '55%');
-      $('#iconFrame').css('height', pHeight*0.55);
-      $('#iconFrame').css('z-index', '1');
-    });
+  }
+
+  componentDidMount() {
+    this.adjust();
+    window.addEventListener('resize', this.adjust);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.adjust);
   }
 
   render() {

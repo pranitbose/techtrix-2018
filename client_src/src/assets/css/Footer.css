@@ -1,0 +1,115 @@
+.Footer {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.fixed-action-btn-left {
+  position: fixed;
+  left: 23px;
+  bottom: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  width: 56px;
+  height: 71px;
+  z-index: 997;
+}
+
+.fixed-action-btn.spin-close .btn-large {
+  position: relative;
+}
+.fixed-action-btn.spin-close .btn-large i {
+  color: black;
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.fixed-action-btn.spin-close .btn-large:before {
+  transition: transform 0.3s, opacity 0.3s;
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.64rem;
+  height: 2px;
+  background: black;
+  margin-top: -2px;
+  margin-left: -0.82rem;
+  transform: rotate(0);
+  opacity: 0;
+}
+.fixed-action-btn.spin-close .btn-large:after {
+  transition: transform 0.3s, opacity 0.3s;
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.64rem;
+  height: 2px;
+  background: black;
+  margin-top: -2px;
+  margin-left: -0.82rem;
+  transform: rotate(0);
+  opacity: 0;
+}
+.fixed-action-btn.spin-close.active .btn-large i {
+  opacity: 0;
+}
+.fixed-action-btn.spin-close.active .btn-large:before {
+  opacity: 1;
+  transform: rotate(135deg);
+}
+.fixed-action-btn.spin-close.active .btn-large:after {
+  opacity: 1;
+  transform: rotate(405deg);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 530px) and (orientation: portrait) {
+  .Footer .btn-floating {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  .Footer .btn-floating.btn-large {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .Footer .btn-floating i {
+    line-height: 30px;
+    font-size: 1rem;
+  }
+  .Footer .btn-floating.btn-large i {
+    line-height: 42px;
+    font-size: 1.5rem;
+  }
+  .fixed-action-btn-left {
+    width: 42px;
+    height: 57px;
+  }
+}
+@media only screen and (min-height: 270px) and (max-height: 480px) and (orientation: landscape) {
+  .Footer .btn-floating {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  .Footer .btn-floating.btn-large {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .Footer .btn-floating i {
+    line-height: 30px;
+    font-size: 1rem;
+  }
+  .Footer .btn-floating.btn-large i {
+    line-height: 42px;
+    font-size: 1.5rem;
+  }
+  .fixed-action-btn-left {
+    width: 42px;
+    height: 57px;
+  }
+}
