@@ -26,7 +26,7 @@ class Main extends Component {
     $('body').css('pointer-events', 'none');
     setTimeout(() => {
       $('body').css('pointer-events', 'auto');
-    }, 7000);
+    }, 8000);
   }
 
   componentWillReceiveProps(nextProps) {
