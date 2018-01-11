@@ -24,9 +24,14 @@ class Main extends Component {
 
   componentDidMount() {
     $('body').css('pointer-events', 'none');
+    let width = window.innerWidth;
+    let waitTime = 7000;
+    if (width <= 800) {
+      waitTime = 3000;
+    }
     setTimeout(() => {
       $('body').css('pointer-events', 'auto');
-    }, 9000);
+    }, waitTime);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -41,7 +46,7 @@ class Main extends Component {
         <Fade location={this.props.location}>
           <Switch location={this.props.location}>
             <Route exact path='/' component={Home} />
-            <Route exact path='/events' render={ () => <div><div className='bgOverlay'></div><Events /></div> } />
+            <Route exact path='/events' render={ ({ location }) => <div><div className='bgOverlay'></div><Events location={location} lastLocName={this.state.lastLocationPathname} /></div> } />
             <Route exact path='/signup' render={ ({ location }) => <div><div className='bgOverlay'></div><Register location={location} lastLocName={this.state.lastLocationPathname} /></div> } />
             <Route exact path='/login' render={ ({ location }) => <div><div className='bgOverlay'></div><Register location={location} lastLocName={this.state.lastLocationPathname} /></div> } />
             <Route exact path='/workshops' render={ () => <div><div className='bgOverlay'></div><Workshops /></div> } />
@@ -50,7 +55,7 @@ class Main extends Component {
             <Route exact path='/gallery' render={ () => <div><div className='bgOverlay'></div><Gallery /></div>  } />
             <Route exact path='/about' render={ () => <div><div className='bgOverlay'></div><About /></div> } />
             <Route exact path='/contact' render={ () => <div><div className='bgOverlay'></div><Contact /></div> } />
-            <Route exact path='/events/:eventName' render={ ({ match }) => <div><div className='bgOverlay'></div><EventDetails match={match} /></div> } />
+            <Route exact path='/events/:eventName' render={ ({ match, history }) => <div><div className='bgOverlay'></div><EventDetails match={match} history={history} /></div> } />
             <Route component={NotFound} />
           </Switch>
         </Fade>

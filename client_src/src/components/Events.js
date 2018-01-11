@@ -19,9 +19,11 @@ class Events extends Component {
 
   render() {
     let options = {
-      anchors:              ['robotics', 'coding', 'gaming', 'geeks', 'kaleidoscope', 'out-of-the-box'],
+      anchors:              ['robotics', 'coding', 'gaming', 'geeks', 'kaleidoscope', 'outOfTheBox'],
       delay:                1000, // the scroll animation speed
-      navigationTooltips:   ['Robotics', 'Coding', 'Gaming', 'Geeks', 'Kaleidoscope', 'Out of the Box']
+      touchSensitivity:     3,
+      navigationTooltips:   ['Robotics', 'Coding', 'Gaming', 'Geeks', 'Kaleidoscope', 'Out of the Box'],
+      navigationClass:      'Navigation'
     };
 
     return(
@@ -29,12 +31,12 @@ class Events extends Component {
         <div ref='contentWrap' className='contentWrap fullpage'>
           <EventIcon />
           <SectionsContainer {...options}>
-            <Section><EventList id="1" eventCategory={events_data.robotics} categoryName='robotics' /></Section>
-            <Section><EventList id="2" eventCategory={events_data.coding} categoryName='coding' /></Section>
-            <Section><EventList id="3" eventCategory={events_data.gaming} categoryName='gaming' /></Section>
-            <Section><EventList id="4" eventCategory={events_data.geeks} categoryName='geeks' /></Section>
-            <Section><EventList id="5" eventCategory={events_data.kaleidoscope} categoryName='kaleidoscope' /></Section>
-            <Section><EventList id="6" eventCategory={events_data.outOfTheBox} categoryName='out of the box' /></Section>
+            <Section><EventList id="1" eventCategory={events_data.robotics} categoryName='robotics' lastLocName={this.props.lastLocName} /></Section>
+            <Section><EventList id="2" eventCategory={events_data.coding} categoryName='coding' lastLocName={this.props.lastLocName} /></Section>
+            <Section><EventList id="3" eventCategory={events_data.gaming} categoryName='gaming' lastLocName={this.props.lastLocName} /></Section>
+            <Section><EventList id="4" eventCategory={events_data.geeks} categoryName='geeks' lastLocName={this.props.lastLocName} /></Section>
+            <Section><EventList id="5" eventCategory={events_data.kaleidoscope} categoryName='kaleidoscope' lastLocName={this.props.lastLocName} /></Section>
+            <Section><EventList id="6" eventCategory={events_data.outOfTheBox} categoryName='out of the box' lastLocName={this.props.lastLocName} /></Section>
           </SectionsContainer>
         </div>
       </div>

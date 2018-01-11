@@ -5,11 +5,16 @@ import '../assets/css/Navbar.css';
 
 class Navbar extends Component {
   componentDidMount() {
+    let width = window.innerWidth;
+    let waitTime = 4500;
+    if (width <= 800) {
+      waitTime = 1000;
+    }
     setTimeout(() => {
-      $('#nav-large-screen').fadeIn(3000);
-      $('.nav-mobile').fadeIn(3000);
-      $('.horizontal-grad').fadeIn(3000);
-    }, 5000);
+      $('#nav-large-screen').fadeIn(1500);
+      $('.nav-mobile').fadeIn(1500);
+      $('.horizontal-grad').fadeIn(1500);
+    }, waitTime);
   }
 
   render() {

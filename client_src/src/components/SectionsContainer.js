@@ -253,7 +253,7 @@ export default class SectionsContainer extends React.Component {
         distX = touchobj.pageX - startX // get horizontal dist traveled by finger while in contact with surface
         distY = touchobj.pageY - startY // get vertical dist traveled by finger while in contact with surface
         elapsedTime = new Date().getTime() - startTime // get time elapsed
-        if (elapsedTime <= allowedTime){ // first condition for awipe met
+        if (elapsedTime <= allowedTime){ // first condition for swipe met
             if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint){ // 2nd condition for vertical swipe met
               swipedir = (distY < 0)? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
               var direction = swipedir === 'down' ? that.state.activeSection - 1 : swipedir === 'up' ? that.state.activeSection + 1 : -1;
@@ -323,7 +323,7 @@ export default class SectionsContainer extends React.Component {
             zIndex: '10',
             right: '10px',
             top: '25%',
-            transform: 'translate(-50%, -50%)',
+            transform: 'translate(-50%, -50%)'
         };
 
         const anchors = this.props.anchors.map((link, index) => {
@@ -356,7 +356,7 @@ export default class SectionsContainer extends React.Component {
         });
 
         return (
-            <div className={this.props.navigationClass || 'Navigation hide-on-med-and-down'}
+            <div className={this.props.navigationClass || 'Navigation'}
                  style={this.props.navigationClass ? null : navigationStyle}>
                 {anchors}
             </div>

@@ -9,14 +9,20 @@
   display: flex;
   flex-direction: column;
   margin-top: 2.5rem;
-  font-family: latina;
+  font-family: orbitron;
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 20px;
 }
 .slide-content .event-icon {
-  margin-bottom: 1.5rem;
-  font-size: 7rem;
+  margin-bottom: 2.5rem;
+  width: 80px;
+  height: 80px;
+  /*font-size: 7rem;*/
+}
+.slide-content img {
+  width: 80px;
+  height: 80px;
 }
 .slide-content .eventBtn {
   flex-grow: 1;
@@ -33,16 +39,19 @@
   transition: background 0.5s;
 }
 .slide-content .event-link {
+  font-family: orbitron-med;
   font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 530px) and (orientation: portrait) {
   .slide-content h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 2.9rem;
   }
   .slide-content .event-icon {
-    font-size: 4rem;
+    width: 60px;
+    height: 60px;
+    /*font-size: 4rem;*/
   }
   .slide-content .event-link {
     font-size: 0.8rem;
@@ -55,10 +64,12 @@
 @media only screen and (min-height: 270px) and (max-height: 480px) and (orientation: landscape) {
   .slide-content h2 {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .slide-content .event-icon {
-    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    /*font-size: 2rem;*/
   }
   .slide-content .eventBtn {
     margin-bottom: 1rem;

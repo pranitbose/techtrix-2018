@@ -20,11 +20,11 @@ class Sponsors extends Component {
         <div className='contentWrap'>
           <div className='container'>
             <div className='sponsorsWrap'>
-              <h2 className='black-text'>Our Previous Year Sponsors</h2>
+              <h2 className='amber-glow-text'>Our Previous Year Sponsors</h2>
               {sponsors.map((i) =>
                 <div key={i[0]} className='row'>
                   {i.map((j) =>
-                    <div key={j} className='col s8 m8 l4 xl4 offset-s2 offset-m2'>
+                    <div key={j} className='col s8 m10 l4 xl4 offset-s2 offset-m1'>
                       <img className='responsive-img' src={require(`../assets/images/sponsors/${j}.png`)} alt="" />
                     </div>
                   )}

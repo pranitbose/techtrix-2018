@@ -11,6 +11,8 @@ class Slider extends Component {
   }
 
   componentWillUnmount() {
+    this.prevBtn.off('click', this.prev);
+    this.nextBtn.off('click', this.next);
     window.removeEventListener('resize', this._handleResize);
   }
 
@@ -20,11 +22,10 @@ class Slider extends Component {
     this.slides = this.sliderContainer.find('.slide');
     this.prevBtn = this.sliderContainer.find('#prevSlide');
     this.nextBtn = this.sliderContainer.find('#nextSlide');
-    this.slideIndex = 1;
+    this.slideIndex = parseInt(this.props.slideIndex, 10);
     this.numOfSlides = this.slides.length;
     this.animationSpeed = 1000;
     this.sliderContainer.css('width', (this.numOfSlides*100)+'%');
-    this.prevBtn.hide();
   }
 
   _handleResize = () => {
@@ -35,15 +36,18 @@ class Slider extends Component {
 
   prev = (e) => {
     $(this).off(e);
-    if (this.slideIndex > 1) {
+    if (this.slideIndex >= 1) {
       let slideWidth = this.slides[0].clientWidth;
-      if (this.slideIndex === 2) {
-        this.prevBtn.hide();
+      if (this.slideIndex === 1) {
+        this.sliderContainer.animate({'margin-left': '+=' + (-1 * slideWidth * (this.numOfSlides - 1))}, this.animationSpeed, () => {
+          this.slideIndex = this.numOfSlides;
+        });
       }
-      this.sliderContainer.animate({'margin-left': '+='+slideWidth}, this.animationSpeed, () => {
-        this.slideIndex--;
-        this.nextBtn.show();
-      });
+      else {
+        this.sliderContainer.animate({'margin-left': '+='+slideWidth}, this.animationSpeed, () => {
+          this.slideIndex--;
+        });
+      }
     }
     setTimeout(() => {
       this.prevBtn.on('click', this.prev);
@@ -52,15 +56,18 @@ class Slider extends Component {
 
   next = (e) => {
     $(this).off(e);
-    if (this.slideIndex < this.numOfSlides) {
+    if (this.slideIndex <= this.numOfSlides) {
       let slideWidth = this.slides[0].clientWidth;
-      if (this.slideIndex === this.numOfSlides-1) {
-        this.nextBtn.hide();
+      if (this.slideIndex === this.numOfSlides) {
+        this.sliderContainer.animate({'margin-left': '-=' + (-1 * slideWidth * (this.numOfSlides - 1))}, this.animationSpeed, () => {
+          this.slideIndex = 1;
+        });
       }
-      this.sliderContainer.animate({'margin-left': '-='+slideWidth}, this.animationSpeed, () => {
-        this.slideIndex++;
-        this.prevBtn.show();
-      });
+      else {
+        this.sliderContainer.animate({'margin-left': '-='+slideWidth}, this.animationSpeed, () => {
+          this.slideIndex++;
+        });
+      }
     }
     setTimeout(() => {
       this.nextBtn.on('click', this.next);

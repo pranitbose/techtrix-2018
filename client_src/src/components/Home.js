@@ -5,12 +5,17 @@ import logoImg from '../assets/images/techtrix_logo.png';
 
 class Home extends Component {
   componentDidMount() {
+    let width = window.innerWidth;
+    let waitTime = 5000;
+    if (width <= 800) {
+      waitTime = 1000;
+    }
     setTimeout(() => {
-      $('.logoWrap').fadeIn(3000);
-    }, 1000);
+      $('.logoWrap').fadeIn(1500);
+    }, 500);
     setTimeout(() => {
-      $('.eventDate').fadeIn(3000);
-    }, 5000);
+      $('.eventDate').fadeIn(1500);
+    }, waitTime);
   }
 
   render() {
