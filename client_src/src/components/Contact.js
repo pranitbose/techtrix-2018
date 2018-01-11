@@ -10,6 +10,7 @@ class Contact extends Component {
   componentDidMount() {
     this.adjust();
     window.addEventListener('resize', this.adjust);
+    this.animation();
   }
 
   componentWillUnmount() {
@@ -56,6 +57,9 @@ class Contact extends Component {
       $('.contentWrap').css('top', '64px');
       $('.contentWrap').css('height', '100%').css('height', '-=64px');
     }
+  }
+  animation=()=>{
+    
   }
 }
 
