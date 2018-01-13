@@ -33,7 +33,7 @@ class About extends Component {
               <div className='row'>
                 <div className='col s12 aboutTextWrapper'>
                   <h5>Why come to TechTrix 2018?</h5>
-                  <p>It&#8217;s 2018 and Yes! TechTrix is back once more with multitude of exciting events. With around 38 events this year ranging across 6 different categories, TechTrix offers you the opportunity to brag about your technical prowess and perhaps meet some like-minded technocrats, engineers and innovators like yourself.<br />
+                  <p>It&#8217;s 2018 and Yes! TechTrix is back once more with multitude of exciting events. With around 37 events this year ranging across 6 different categories, TechTrix offers you the opportunity to brag about your technical prowess and perhaps meet some like-minded technocrats, engineers and innovators like yourself.<br />
                   Like every year, TechTrix promises you to bring back old memories and leave you with fresh memories to cherish for a lifetime. Come, witness true exhilaration and feel the adrenaline rush as you battle it out with the brightest minds in fierce competitions. Let&#8217;s make TechTrix 2018 a grand success!
                   </p>
                 </div>
