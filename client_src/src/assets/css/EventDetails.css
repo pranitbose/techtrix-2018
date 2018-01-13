@@ -38,6 +38,9 @@
   font-family: orbitron;
   text-align: center;
 }
+.eventDetailsWrap .collapsible-body ul > li {
+  list-style-type: square;
+}
 .eventDetailsWrap .collapsible.popout > li {
   box-shadow: 0 2px 5px 0 rgba(255,255,255,0.16), 0 2px 10px 0 rgba(255,255,255,0.12);
 }

@@ -5,43 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/_favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>TechTrix 2018</title>
     <style>
-    .loader {
-      border: 16px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 16px solid #3498db;
-      width: 120px;
-      height: 120px;
-      position: absolute;
-      left: calc(50% - 60px);
-      top: calc(50% - 60px);
-      -webkit-animation: spin 4s linear infinite; 
-      animation: spin 4s linear infinite;
-    }
+      .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        left: calc(50% - 60px);
+        top: calc(50% - 60px);
+        -webkit-animation: spin 4s linear infinite;
+        -moz-animation: spin 4s linear infinite;
+        -o-animation: spin 4s linear infinite;
+        animation: spin 4s linear infinite;
+      }
 
-    /* Safari */
-    @-webkit-keyframes spin {
-      0% { -webkit-transform: rotate(0deg); }
-      100% { -webkit-transform: rotate(360deg); }
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg);  }
-      10% { border-top: 16px solid red; }
-      20% { border-top: 16px solid yellow; border-bottom: 16px solid cyan; }
-      100% { transform: rotate(360deg);   }
-    }
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        10% { border-top: 16px solid red; }
+        20% { border-top: 16px solid yellow; border-bottom: 16px solid cyan; }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      @-moz-keyframes spin {
+        0% { -moz-transform: rotate(0deg); }
+        10% { border-top: 16px solid red; }
+        20% { border-top: 16px solid yellow; border-bottom: 16px solid cyan; }
+        100% { -moz-transform: rotate(360deg); }
+      }
+      @-o-keyframes spin {
+        0% { -o-transform: rotate(0deg); }
+        10% { border-top: 16px solid red; }
+        20% { border-top: 16px solid yellow; border-bottom: 16px solid cyan; }
+        100% { -o-transform: rotate(360deg); }
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        10% { border-top: 16px solid red; }
+        20% { border-top: 16px solid yellow; border-bottom: 16px solid cyan; }
+        100% { transform: rotate(360deg); }
+      }
     </style>
+    <title>TechTrix 2018</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div class="loader" id="loader"></div>
+    <div id="loader" class="loader"></div>
     <div id="root"></div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -49,7 +63,7 @@
     <script>
       $(function() {
         $(window).on('load', function() {
-          $('#loader').delay(3000).fadeOut('slow');
+          $('#loader').fadeOut('fast');
           $('#root').fadeIn('slow');
         });
       });

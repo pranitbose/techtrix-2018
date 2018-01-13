@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import $ from 'jquery';
 import Home from './Home';
 import Events from './Events';
 import Register from './Register';
@@ -23,7 +22,7 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    $('body').css('pointer-events', 'none');
+    /*$('body').css('pointer-events', 'none');
     let width = window.innerWidth;
     let waitTime = 7000;
     if (width <= 800) {
@@ -31,7 +30,7 @@ class Main extends Component {
     }
     setTimeout(() => {
       $('body').css('pointer-events', 'auto');
-    }, waitTime);
+    }, waitTime);*/
   }
 
   componentWillReceiveProps(nextProps) {

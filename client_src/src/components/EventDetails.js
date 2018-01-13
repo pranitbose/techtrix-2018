@@ -42,22 +42,32 @@ class EventDetails extends Component {
               <h2 className='amber-glow-text'>{_event.eventName}</h2>
               <Collapsible accordion popout defaultActiveKey={0}>
                 <CollapsibleItem header='Event Description' icon='info'>
-                  <p>Will be updated soon</p>
+                  <p className='center-align'><strong>{_event.tagline}</strong></p>
+                  <p>{_event.eventDescription}</p>
                 </CollapsibleItem>
                 <CollapsibleItem header='General Rules' icon='description'>
-                  <p>Will be updated soon</p>
+                  <ul>
+                    {_event.generalRules.split('\n').map((rule, i) =>
+                      <li key={i}>{rule}</li>
+                    )}
+                  </ul>
+                  <p>For detailed Rules, refer to the downloadable rule-book below.</p>
+                  <a className='waves-effect waves-light btn disabled'>Download Rules</a>
                 </CollapsibleItem>
                 <CollapsibleItem header='Registration Details' icon='person_add'>
-                  <p>Will be updated soon</p>
+                  <p><strong>Event Registration Fees:</strong>&nbsp;{_event.registrationDetails}</p>
+                  <p><strong>General Registration Fees:</strong>&nbsp;₹20 (One-Time Payment only)</p>
                 </CollapsibleItem>
                 <CollapsibleItem header='Prize Details' icon='attach_money'>
-                  <p>Will be updated soon</p>
+                  <p>{_event.prizeDetails}</p>
                 </CollapsibleItem>
                 <CollapsibleItem header='Venue & Timings' icon='location_on'>
                   <p>Will be updated soon</p>
                 </CollapsibleItem>
                 <CollapsibleItem header='Contacts' icon='contacts'>
-                  <p>Will be updated soon</p>
+                  {_event.contacts.map((person, i) =>
+                    <p key={i}>{person.name}:&nbsp;<a href={`tel:${person.mobile}`} className='black-text'>{person.mobile}</a></p>
+                  )}
                 </CollapsibleItem>
               </Collapsible>
             </div>

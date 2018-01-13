@@ -3,7 +3,7 @@ export default {
     {id: 1, name: 'Logia', icon: 'logia'},
     {id: 2, name: 'Bugs Funny', icon: 'bugs-funny'},
     {id: 3, name: 'Web Design', icon: 'web-design'},
-    {id: 4, name: 'Electronics', icon: 'electronics'}
+    {id: 4, name: 'Circuipedia', icon: 'circuipedia'}
   ],
   robotics: [
     {id: 1, name: 'Battlefield', icon: 'robo-war-heavy'},
@@ -28,12 +28,11 @@ export default {
   ],
   kaleidoscope: [
     {id: 1, name: 'Behind the Lens', icon: 'behind-the-lens'},
-    {id: 2, name: 'Canvas', icon: 'canvas'},
-    {id: 3, name: 'Director\'s Cut', icon: 'directors-cut'},
-    {id: 4, name: 'Impact', icon: 'impact'},
-    {id: 5, name: 'Tell-A-Tale', icon: 'tell-a-tale'},
-    {id: 6, name: 'Logo Designing', icon: 'tshirt-painting'},
-    {id: 7, name: 'T-Shirt Painting', icon: 'tshirt-painting'}
+    {id: 2, name: 'Director\'s Cut', icon: 'directors-cut'},
+    {id: 3, name: 'Impact', icon: 'impact'},
+    {id: 4, name: 'Tell-A-Tale', icon: 'tell-a-tale'},
+    {id: 5, name: 'Logo Designing', icon: 'logo-designing'},
+    {id: 6, name: 'T-Shirt Painting', icon: 'tshirt-painting'}
   ],
   geeks: [
     {id: 1, name: 'Question Mark', icon: 'question-mark'},
