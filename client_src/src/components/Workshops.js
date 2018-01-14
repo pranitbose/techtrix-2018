@@ -33,7 +33,7 @@ class Workshops extends Component {
                   <div key={i} id={`workshopCat${workshop.id}`} className={workshop.id === 1 ? 'active' : ''}>
                     <Collapsible popout accordion defaultActiveKey={0}>
                       <CollapsibleItem header='Description' icon='info'>
-                        <div className="workshopImage">
+                        {/*<div className="workshopImage">
                          <img id={`workshopImg${i}`} src={workshop.img} alt="Workshop Poster" />
                          <br />
                          <button className="expand btn btn-floating red darken-2 wave-effects" onClick={() => this.handleExpand(i)}>
@@ -45,7 +45,7 @@ class Workshops extends Component {
                            </button>
                          </a>
                         </div>
-                        <br />
+                        <br />*/}
                         {workshop.info}
                         <p><a href={workshop.pdf} className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Download pdf</a></p>
                       </CollapsibleItem>
@@ -62,8 +62,8 @@ class Workshops extends Component {
                         <h5 className="amber-text">Student Coordinators :-</h5>
                         {workshop.contacts.map((c, i) => <p key={i}>{c}</p> )}
                         {/*
-                        <h5 className="amber-text">Faculty Coordinators:-</h5>
-                        { item.faculty.map((c)=> <p key={c}> {c} </p> ) }
+                        <h5 className="amber-text">Faculty Coordinators :-</h5>
+                        {workshop.faculty.map((c, i) => <p key={i}>{c}</p> )}
                         */}
                       </CollapsibleItem>
                     </Collapsible>

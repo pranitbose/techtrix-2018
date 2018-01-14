@@ -11,5 +11,19 @@
 }
 
 #iconFrame {
+  position: fixed;
+  top: calc(50% + 32px);
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 55%;
+  height: calc((100vh - 64px) * 0.55);
+  z-index: 0;
   animation: infinite-scale 4s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 800px) {
+  #iconFrame {
+    top: calc(50% + 24px);
+    height: calc((100vh - 48px) * 0.55);
+  }
 }

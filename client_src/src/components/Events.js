@@ -19,11 +19,10 @@ class Events extends Component {
 
   render() {
     let options = {
-      anchors:              ['robotics', 'coding', 'gaming', 'geeks', 'kaleidoscope', 'outOfTheBox'],
-      delay:                1000, // the scroll animation speed
+      anchors:              ['robotics', 'coding', 'gaming', 'geeks', 'kaleidoscope', 'out_of_the_box'],
+      delay:                700, // the scroll animation speed
       touchSensitivity:     3,
-      navigationTooltips:   ['Robotics', 'Coding', 'Gaming', 'Geeks', 'Kaleidoscope', 'Out of the Box'],
-      navigationClass:      'Navigation'
+      navigation:           false
     };
 
     return(

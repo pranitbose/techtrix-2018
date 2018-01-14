@@ -228,8 +228,8 @@ export default class SectionsContainer extends React.Component {
     startY,
     distX,
     distY,
-    threshold = this.state.windowHeight / 100 * this.props.touchSensitivity, //required min distance traveled to be considered swipe
-    restraint = 10, // maximum distance allowed at the same time in perpendicular direction
+    threshold = 10,//this.state.windowHeight / 100 * this.props.touchSensitivity, //required min distance traveled to be considered swipe
+    restraint = 100, // maximum distance allowed at the same time in perpendicular direction
     allowedTime = 1000, // maximum time allowed to travel that distance
     elapsedTime,
     startTime,

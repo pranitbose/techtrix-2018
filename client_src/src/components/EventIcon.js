@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+//import $ from 'jquery';
 import '../assets/css/EventIcon.css';
 
 class EventIcon extends Component {
-  adjust = () => {
+  /*adjust = () => {
     let width = window.innerWidth;
     let topHeight = 64;
     if (width <= 800) {
@@ -21,7 +21,7 @@ class EventIcon extends Component {
     $('#iconFrame').css({'transform': 'translate(-50%,-50%)'});
     $('#iconFrame').css('width', '55%');
     $('#iconFrame').css('height', Math.round(pHeight*0.55));
-    $('#iconFrame').css('z-index', '1');
+    $('#iconFrame').css('z-index', '0');
   }
 
   componentDidMount() {
@@ -31,7 +31,7 @@ class EventIcon extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.adjust);
-  }
+  }*/
 
   render() {
     return(

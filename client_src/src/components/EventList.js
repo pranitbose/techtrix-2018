@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Dropdown, NavItem } from 'react-materialize';
 import $ from 'jquery';
 import Slider from './Slider';
 import '../assets/css/EventList.css';
 import eventdetails_data from '../assets/data/eventdetails_data';
 
+let eventCat = ['robotics', 'coding', 'gaming', 'geeks', 'kaleidoscope', 'out of the box'];
+
 class EventList extends Component {
   componentDidMount() {
+    this.dropdownMenu = [];
     this.resolveBackLink(this.props.lastLocName);
+    this.createDropdownMenu();
   }
 
   render() {
@@ -27,7 +32,14 @@ class EventList extends Component {
               {this.props.eventCategory.map((_event) =>
                 <div key={_event.id} className='slide white-text'>
                   <div className='slide-content'>
-                    <h2 className='amber-glow-text'>{this.props.categoryName}</h2>
+                    <Dropdown trigger={
+                        <div className='event-category'><a className='btn amber-glow-text'>{this.props.categoryName}<i className='material-icons right'>arrow_drop_down</i></a></div>
+                      }>
+                      {this.createDropdownMenu().map((category, i) =>
+                        <NavItem key={i} href={`#${category.replace(/\s+/g, '_')}`}>{category}</NavItem>
+                      )}
+                    </Dropdown>
+
                     <img src={require(`../assets/images/event_logo/${this.props.categoryName.replace(/\s+/g, '-')}/${_event.icon}.png`)} className='event-icon' alt="Event Icon" />
                     <div className='eventBtn'>
                       <Link to={`/events/${_event.name.replace(/\s+|'|-|\./g, '_').toLowerCase()}`}  className='btn btn-large waves-effect black-text event-link'>{_event.name}</Link>
@@ -69,6 +81,12 @@ class EventList extends Component {
       }
     }
     return 1;
+  }
+
+  createDropdownMenu = () => {
+    let menu = eventCat.filter( e => e !== this.props.categoryName )
+    //console.log(this.dropdownMenu);
+    return menu;
   }
 }
 

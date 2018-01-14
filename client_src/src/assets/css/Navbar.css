@@ -71,6 +71,17 @@ nav .brand-logo {
   text-align: center;
 }
 
+.navMobileWrap {
+  position: fixed;
+  top: 0;
+  left: 50px;
+  right: 50px;
+  height: 48px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 10;
+}
+
 .horizontal-grad {
   position: fixed;
   top: 64px;
@@ -88,6 +99,17 @@ nav .brand-logo {
   right: 10%;
   height: 64px;
   z-index: 0;
+}
+.nav-mobile .navIndicatorWrapper {
+  position: fixed;
+  left: 5px;
+  right: 5px;
+  height: 48px;
+  z-index: 0;
+}
+.nav-mobile .navIndicatorWrapper .material-icons {
+  height: 48px;
+  line-height: 48px;
 }
 
 @keyframes bounce-left {

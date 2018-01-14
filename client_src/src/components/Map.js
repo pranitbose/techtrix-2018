@@ -39,7 +39,7 @@ class Map extends Component {
         map: this.map,
         title: 'RCC Institute of Information Technology, Kolkata'
       }
-      const marker = new maps.Marker(markerOptions);
+      new maps.Marker(markerOptions);
     }
   }
 }

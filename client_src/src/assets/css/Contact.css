@@ -56,6 +56,10 @@
   height: 5px;
 }
 
+.teamWrapper ul {
+  height: 64px;
+}
+
 .teamWrapper .teamMembers {
   width: 100%;
   height: 100%;
@@ -146,18 +150,12 @@
   100% { transform: rotateY(0deg) scale(1.0,1.0); opacity: 1; }
 }
 
-@media only screen and (max-width: 992px) {
-  ._tabs ._tab div {
-    padding: 0 12px;
-  }
-}
-
 @media only screen and (min-width: 320px) and (max-width: 530px) and (orientation: portrait) {
   .teamWrapper {
     padding-top: 0;
   }
 
-  .Contact ._tab a {
+  .Contact ._tabs ._tab div {
     font-size: 16px;
   }
 
@@ -225,7 +223,7 @@
     padding-top: 0;
   }
 
-  .Contact ._tab a {
+  .Contact ._tabs ._tab div {
     font-size: 16px;
   }
 

@@ -68,40 +68,41 @@ export default {
       id: 9,
       role: 'Kaleidoscope Event Heads',
       members: [
-        {m_id: 17, name: 'Sayon Gupta', position: 'Head Coordinator', contactNum: '+91 7980122630', emailId: 'sayon.gupta@gmail.com', socialLink: "https://www.facebook.com/sayon.gupta"}
+        {m_id: 17, name: 'Sayon Gupta', position: 'Head Coordinator', contactNum: '+91 7980122630', emailId: 'sayon.gupta@gmail.com', socialLink: "https://www.facebook.com/sayon.gupta"},
+        {m_id: 18, name: 'Namrata Sarkar', position: 'Head Coordinator', contactNum: '+91 9051403511', emailId: 'namrata.noms@gmail.com', socialLink: "https://www.facebook.com/profile.php?id=100006093556884"}
       ]
     },
     {
       id: 10,
       role: 'Out of the Box Event Heads',
       members: [
-        {m_id: 18, name: 'Chandrika Banerjee', position: 'Head Coordinator', contactNum: '+91 8981806614', emailId: 'banerjeechandrika12@gmail.com', socialLink: "https://www.facebook.com/banerjeechandrika12"},
-        {m_id: 19, name: 'Sayani Dutta', position: 'Head Coordinator', contactNum: '+91 8436432703', emailId: 'sayani.dutta79@gmail.com', socialLink: "https://www.facebook.com/sayani.dutta.716"}
+        {m_id: 19, name: 'Chandrika Banerjee', position: 'Head Coordinator', contactNum: '+91 8981806614', emailId: 'banerjeechandrika12@gmail.com', socialLink: "https://www.facebook.com/banerjeechandrika12"},
+        {m_id: 20, name: 'Sayani Dutta', position: 'Head Coordinator', contactNum: '+91 8436432703', emailId: 'sayani.dutta79@gmail.com', socialLink: "https://www.facebook.com/sayani.dutta.716"}
       ]
     },
     {
       id: 11,
       role: 'Media & Sponsors',
       members: [
-        {m_id: 20, name: 'Purbayan Saha', position: 'Media and Sponsors', contactNum: '+91 9804790687', emailId: 'purbayan.saha20@gmail.com', socialLink: "https://www.facebook.com/purbayan.saha"},
-        {m_id: 21, name: 'Himadri Biswas', position: 'Media and Sponsors', contactNum: '+91 8296009994', emailId: 'himadri.fun@gmail.com', socialLink: "https://www.facebook.com/himadribiswas95"}
+        {m_id: 21, name: 'Purbayan Saha', position: 'Media and Sponsors', contactNum: '+91 9804790687', emailId: 'purbayan.saha20@gmail.com', socialLink: "https://www.facebook.com/purbayan.saha"},
+        {m_id: 22, name: 'Himadri Biswas', position: 'Media and Sponsors', contactNum: '+91 8296009994', emailId: 'himadri.fun@gmail.com', socialLink: "https://www.facebook.com/himadribiswas95"}
       ]
     },
     {
       id: 12,
       role: 'Public Relations & Marketing',
       members: [
-        {m_id: 22, name: 'Barun Kumar Singh', position: 'PR and Marketing', contactNum: '+91 8348591468', emailId: 'barunsingh.it@gmail.com', socialLink: "https://www.facebook.com/BSP2596"},
-        {m_id: 23, name: 'Saurabh Bagla', position: 'PR and Marketing', contactNum: '+91 7278103385', emailId: 'baglasaurabh6@gmail.com', socialLink: "https://www.facebook.com/saurabh.bagla.5"}
+        {m_id: 23, name: 'Barun Kumar Singh', position: 'PR and Marketing', contactNum: '+91 8348591468', emailId: 'barunsingh.it@gmail.com', socialLink: "https://www.facebook.com/BSP2596"},
+        {m_id: 24, name: 'Saurabh Bagla', position: 'PR and Marketing', contactNum: '+91 7278103385', emailId: 'baglasaurabh6@gmail.com', socialLink: "https://www.facebook.com/saurabh.bagla.5"}
       ]
     },
     {
       id: 13,
       role: 'Finance',
       members: [
-        {m_id: 24, name: 'Sayon Gupta', position: 'Finance', contactNum: '+91 7980122630', emailId: 'sayon.gupta@gmail.com', socialLink: "https://www.facebook.com/sayon.gupta"},
-        {m_id: 25, name: 'Deep Chatterjee', position: 'Finance', contactNum: '+91 7384343380', emailId: 'dpchatterjee92@gmail.com', socialLink: "https://www.facebook.com/deep.chatterjee.96"},
-        {m_id: 26, name: 'Angshuman Midya', position: 'Finance', contactNum: '+91 8582876106', emailId: 'angshuman.midya1@outlook.com', socialLink: "https://www.facebook.com/angshuman.midya1"}
+        {m_id: 25, name: 'Sayon Gupta', position: 'Finance', contactNum: '+91 7980122630', emailId: 'sayon.gupta@gmail.com', socialLink: "https://www.facebook.com/sayon.gupta"},
+        {m_id: 26, name: 'Deep Chatterjee', position: 'Finance', contactNum: '+91 7384343380', emailId: 'dpchatterjee92@gmail.com', socialLink: "https://www.facebook.com/deep.chatterjee.96"},
+        {m_id: 27, name: 'Angshuman Midya', position: 'Finance', contactNum: '+91 8582876106', emailId: 'angshuman.midya1@outlook.com', socialLink: "https://www.facebook.com/angshuman.midya1"}
       ]
     }
   ]
