@@ -382,7 +382,8 @@ export default {
     prizeDetails: 'Prizes to be declared after Round 1.',
     venue_timings: '',
     contacts: [
-      {name: 'SAGAR MUKHERJEE', mobile: '+91 8697602718'}
+      {name: 'SAGAR MUKHERJEE', mobile: '+91 8697602718'},
+      {name: 'NEHA AGARWAL', mobile: '+91 8443090631'}
     ]
   },
   spell_bee: {
@@ -568,7 +569,7 @@ export default {
     venue_timings: '',
     contacts: [
       {name: 'MOULIMA DAS', mobile: '+91 9804356392'},
-      {name: 'NEHA AGARWAL', mobile: '+91 8443090631'}
+      {name: 'ASHWINI DHAREWA', mobile: '+91 8274906294'}
     ]
   },
   antakshari: {

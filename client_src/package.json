@@ -2,7 +2,6 @@
   "name": "client_src",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://techtrix.rccfests.in",
   "dependencies": {
     "google-maps-react": "^1.1.2",
     "jquery": "^3.2.1",
