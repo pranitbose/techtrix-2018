@@ -21,18 +21,6 @@ class Main extends Component {
     };
   }
 
-  componentDidMount() {
-    /*$('body').css('pointer-events', 'none');
-    let width = window.innerWidth;
-    let waitTime = 7000;
-    if (width <= 800) {
-      waitTime = 3000;
-    }
-    setTimeout(() => {
-      $('body').css('pointer-events', 'auto');
-    }, waitTime);*/
-  }
-
   componentWillReceiveProps(nextProps) {
     if (this.props.location !== nextProps.location) {
       this.setState({lastLocationPathname: this.props.location.pathname});

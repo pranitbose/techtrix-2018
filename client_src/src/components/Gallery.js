@@ -18,7 +18,7 @@ class Gallery extends Component {
         <div className='contentWrap'>
           <div className='row'>
             <div className='col s12'>
-              <ImageGallery items={images} showIndex={true} lazyLoad={true} slideInterval={3000} disableThumbnailScroll={false} />
+              <ImageGallery items={images} showIndex={true} lazyLoad={true} slideInterval={2000} disableThumbnailScroll={false} />
             </div>
           </div>
         </div>

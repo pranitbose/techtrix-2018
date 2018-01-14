@@ -157,7 +157,7 @@ export default {
     categoryNum: 2,
     slideIndex: 3,
     tagline: '“If you think math is hard, try web design.” ― Trish Parr',
-    eventDescription: 'Love designing websites? Do you claim yourself a budding Front-end developer? Techtrix 2018 brings to you for the first time Web Wizard, a pure Front-end Web Development event which will challenge your Web Designing skills and knowledge of the various Front-end tools that you will need to build minimal, responsive and unique websites. Can you simply make us say, “Wow!”?',
+    eventDescription: 'Love designing websites? Do you claim yourself a budding Front-end developer? Techtrix 2018 brings to you for the first time Web Design, a pure Front-end Web Development event which will challenge your Web Designing skills and knowledge of the various Front-end tools that you will need to build minimal, responsive and unique websites. Can you simply make us say, “Wow!”?',
     generalRules: 'Participants should have a valid student ID card of their school or college or university to be eligible to participate in this event.\nMaximum 2 members will be allowed in each team.\nThe contest will comprise of 2 rounds – Prelims and Finale.\nNo Internet access will be allowed during the contest.\nNo pre-built template or functions or scripts will be allowed.\nBuild your website from scratch using HTML, CSS, Javascript.\nYou will be allowed to use the latest toolkits such as Bootstrap, Materialize, Material Design Lite, Font Awesome and library such as jQuery locally available.\nLocal development server (localhost) will be made available to you for development in both the rounds.\nSublime Text, Atom and Notepad++ will be provided along with HTML COLOR PICKER software for developing the websites.\nThe required resources such as images or videos for the webpages to be designed will also be provided.',
     rulesPdf: '',
     registrationDetails: '₹100 per Team',
@@ -173,8 +173,8 @@ export default {
     eventName: 'Circuipedia',
     categoryNum: 2,
     slideIndex: 4,
-    tagline: '',
-    eventDescription: '',
+    tagline: 'Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius and a lot of courage to move in the opposite direction.',
+    eventDescription: 'The new electronic interdependence recreates the world in an image of a global picture. Day in and day out the major chunk of technological breakthroughs can be attributed to electronics. So here is a chance to revisit and at the same time to explore the whole new world of electronics! Show us your amazing circuit designing skills.',
     generalRules: 'Participants should have a valid student ID card of their school or college or university to be eligible to participate in this event.\nMaximum 2 members will be allowed in each team.\nThere will be total of 3 rounds.\nFirst two rounds will be MCQ based.\nThe final round will be circuit simulating on TINA software.\nThere will be elimination in first two rounds.',
     rulesPdf: '',
     registrationDetails: '₹100 per Team',
@@ -539,7 +539,7 @@ export default {
   },
 
   minute_to_win_it: {
-    eventCategory: 'outOfTheBox',
+    eventCategory: 'out_of_the_box',
     eventName: 'Minute to Win it',
     categoryNum: 6,
     slideIndex: 1,
@@ -556,7 +556,7 @@ export default {
     ]
   },
   beg_borrow_steal: {
-    eventCategory: 'outOfTheBox',
+    eventCategory: 'out_of_the_box',
     eventName: 'Beg-Borrow-Steal',
     categoryNum: 6,
     slideIndex: 2,
@@ -573,7 +573,7 @@ export default {
     ]
   },
   antakshari: {
-    eventCategory: 'outOfTheBox',
+    eventCategory: 'out_of_the_box',
     eventName: 'Antakshari',
     categoryNum: 6,
     slideIndex: 3,
@@ -590,7 +590,7 @@ export default {
     ]
   },
   treasure_hunt: {
-    eventCategory: 'outOfTheBox',
+    eventCategory: 'out_of_the_box',
     eventName: 'Treasure Hunt',
     categoryNum: 6,
     slideIndex: 4,
@@ -607,7 +607,7 @@ export default {
     ]
   },
   one_shot: {
-    eventCategory: 'outOfTheBox',
+    eventCategory: 'out_of_the_box',
     eventName: 'One Shot',
     categoryNum: 6,
     slideIndex: 5,
