@@ -22,11 +22,11 @@ class Navbar extends Component {
       <div className='Navbar'>
         <nav id='nav-large-screen' className='hide-on-med-and-down'>
           <div className='navIndicatorWrapper'>
-            <span className='leftDoubleChevron left'>
+            <span className='leftDoubleChevron left' onClick={() => this.leftScroll(0)}>
               <i className='material-icons left'>chevron_left</i>
               <i className='material-icons left left-chevron-double'>chevron_left</i>
               </span>
-            <span className='rightDoubleChevron right'>
+            <span className='rightDoubleChevron right' onClick={() => this.rightScroll(0)}>
               <i className='material-icons right right-chevron-double'>chevron_right</i>
               <i className='material-icons right'>chevron_right</i>
             </span>
@@ -48,11 +48,11 @@ class Navbar extends Component {
         </nav>
         <div className='nav-mobile hide-on-large-only'>
           <div className='navIndicatorWrapper'>
-            <span className='leftDoubleChevron white-text left'>
+            <span className='leftDoubleChevron white-text left' onClick={() => this.leftScroll(1)}>
               <i className='material-icons left'>chevron_left</i>
               <i className='material-icons left left-chevron-double'>chevron_left</i>
               </span>
-            <span className='rightDoubleChevron white-text right'>
+            <span className='rightDoubleChevron white-text right' onClick={() => this.rightScroll(1)}>
               <i className='material-icons right right-chevron-double'>chevron_right</i>
               <i className='material-icons right'>chevron_right</i>
             </span>
@@ -73,6 +73,27 @@ class Navbar extends Component {
         <div className='horizontal-grad'></div>
       </div>
     );
+  }
+
+  leftScroll = (i) => {
+    switch(i) {
+      case 0: $('.nav-wrapper').animate({ scrollLeft: '-=120' }, 400);
+              break;
+      case 1: $('.navMobileWrap').animate({ scrollLeft: '-=120' }, 400);
+              break;
+      default:
+    }
+
+  }
+
+  rightScroll = (i) => {
+    switch(i) {
+      case 0: $('.nav-wrapper').animate({ scrollLeft: '+=120' }, 400);
+              break;
+      case 1: $('.navMobileWrap').animate({ scrollLeft: '+=120' }, 400);
+              break;
+      default:
+    }
   }
 }
 

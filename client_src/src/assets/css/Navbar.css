@@ -133,9 +133,11 @@ nav .brand-logo {
   margin-left: -15px;
 }
 .navIndicatorWrapper .leftDoubleChevron {
+  cursor: pointer;
   animation: bounce-left 1.5s infinite;
 }
 .navIndicatorWrapper .rightDoubleChevron {
+  cursor: pointer;
   animation: bounce-right 1.5s infinite;
 }
 
