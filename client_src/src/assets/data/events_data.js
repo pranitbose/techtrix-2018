@@ -22,7 +22,7 @@ export default {
     {id: 5, name: 'Fifa 14', icon: 'fifa-14'},
     {id: 6, name: 'NFS Most Wanted', icon: 'nfs'},
     {id: 7, name: 'Clash Royale', icon: 'clash-royale'},
-    {id: 8, name: 'CoC Clan', icon: 'coc-clan'},
+    {id: 8, name: 'CoC Clan Wars', icon: 'coc-clan'},
     {id: 9, name: 'Mini Militia', icon: 'mini-militia'}
 
   ],

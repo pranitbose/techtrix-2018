@@ -3,36 +3,6 @@ import React, { Component } from 'react';
 import '../assets/css/EventIcon.css';
 
 class EventIcon extends Component {
-  /*adjust = () => {
-    let width = window.innerWidth;
-    let topHeight = 64;
-    if (width <= 800) {
-      topHeight = 48;
-    }
-    let pHeight = window.innerHeight - topHeight;
-    $('#iconFrame').css('position', 'fixed');
-    if (width <= 800) {
-      $('#iconFrame').css('top', '50%').css('top', '+=24px');
-    }
-    else {
-      $('#iconFrame').css('top', '50%').css('top', '+=32px');
-    }
-    $('#iconFrame').css('left', '50%');
-    $('#iconFrame').css({'transform': 'translate(-50%,-50%)'});
-    $('#iconFrame').css('width', '55%');
-    $('#iconFrame').css('height', Math.round(pHeight*0.55));
-    $('#iconFrame').css('z-index', '0');
-  }
-
-  componentDidMount() {
-    this.adjust();
-    window.addEventListener('resize', this.adjust);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.adjust);
-  }*/
-
   render() {
     return(
       <svg version="1.1" id="iconFrame" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

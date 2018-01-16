@@ -12,7 +12,7 @@ export default {
     prizeDetails: 'Prizes worth ₹17,000',
     venue_timings: '',
     contacts: [
-      {name: 'ABHISHEK SARKAR', mobile: '+91 8348591468'},
+      {name: 'ABHISHEK SARKAR', mobile: '+91 9681358848'},
       {name: 'BIBHASH SAHA', mobile: '+91 7076684046'}
     ]
   },
@@ -303,7 +303,7 @@ export default {
       {name: 'RAJDIP DAS', mobile: '+91 9903750643'}
     ]
   },
-  coc_clan: {
+  coc_clan_wars: {
     eventCategory: 'gaming',
     eventName: 'Clash of Clan: Clan Wars',
     categoryNum: 3,
@@ -444,7 +444,7 @@ export default {
     slideIndex: 1,
     tagline: '“Let your words be few and your exposures many.”',
     eventDescription: 'Behind the Lens seeks all the budding photographers out there to come and participate in this event. There is a saying that a picture is worth a thousand words! So what are you waiting for? Grab your gear, get out there, take the best shot which you think corresponds to our Theme and Category and send it to us. Themes will be updated soon.',
-    generalRules: 'Participants should have a valid student ID card of their school or college or university to be eligible to participate in this event.\nIt is an Individual event.\nPhotographs should not include any kind of vulgarity or offensive matter.\nAny such activity might cause the disqualification of the participant.\nEntries shall be judged on – creativity and theme or message portrayed (60% weightage) + likes online on submission page (40% weightage).\nOnly 1 Photograph per registration.\nTopic(any one): Urban Heights, Festive Mood.\nSubmit your photos at techtrix@rccfests.in with the subject line "Behind The Lens Submission", it will be uploaded within 24 hours after review.',
+    generalRules: 'Participants should have a valid student ID card of their school or college or university to be eligible to participate in this event.\nIt is an Individual event.\nPhotographs should not include any kind of vulgarity or offensive matter.\nAny such activity might cause the disqualification of the participant.\nEntries shall be judged on – creativity and theme or message portrayed (60% weightage) + likes online on submission page (40% weightage).\nOnly 1 Photograph per registration.\nTopic to be disclosed two weeks before TechTrix\'18.\nSubmit your photos at techtrix@rccfests.in with the subject line "Behind The Lens Submission", it will be uploaded within 24 hours after review.',
     rulesPdf: '',
     registrationDetails: '₹30 per Person per Photo',
     prizeDetails: 'Prizes to be declared after Round 1.',

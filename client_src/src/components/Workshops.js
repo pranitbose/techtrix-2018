@@ -33,21 +33,23 @@ class Workshops extends Component {
                   <div key={i} id={`workshopCat${workshop.id}`} className={workshop.id === 1 ? 'active' : ''}>
                     <Collapsible popout accordion defaultActiveKey={0}>
                       <CollapsibleItem header='Description' icon='info'>
-                        {/*<div className="workshopImage">
-                         <img id={`workshopImg${i}`} src={workshop.img} alt="Workshop Poster" />
-                         <br />
-                         <button className="expand btn btn-floating red darken-2 wave-effects" onClick={() => this.handleExpand(i)}>
-                           <i className="fa fa-arrows-alt" aria-hidden="true"></i>
-                         </button>
-                         <a href={workshop.img} target="_blank" rel="noopener noreferrer">
-                           <button target="_blank" className="btn btn-floating cyan darken-3 wave-effects">
-                             <i className="fa fa-download" aria-hidden="true"></i>
-                           </button>
-                         </a>
+                        <div className="workshopImage">
+                          <img id={`workshopImg${i}`} src={workshop.img} alt="Workshop Poster" />
+                          <br />
+                          <button className="expand btn btn-floating red darken-2 wave-effects" onClick={() => this.handleExpand(i)}>
+                            <i className="fa fa-arrows-alt" aria-hidden="true"></i>
+                          </button>
+                          <a href={workshop.img} target="_blank" rel="noopener noreferrer">
+                            <button target="_blank" className="btn btn-floating cyan darken-3 wave-effects">
+                              <i className="fa fa-download" aria-hidden="true"></i>
+                            </button>
+                          </a>
                         </div>
-                        <br />*/}
+                        <br />
                         {workshop.info}
-                        <p><a href={workshop.pdf} className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Download pdf</a></p>
+                        { workshop.pdf !== '' &&
+                          <p><a href={workshop.pdf} className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Download pdf</a></p>
+                        }
                       </CollapsibleItem>
                       <CollapsibleItem header='Venue' icon='place'>
                         <p>{workshop.venue} </p>

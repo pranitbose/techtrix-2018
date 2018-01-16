@@ -14,6 +14,27 @@
   height: 71px;
   z-index: 997;
 }
+.fixed-action-btn-left .notificationBox {
+  position: fixed;
+  left: 55px;
+  bottom: 55px;
+  width: 230px;
+  background: white;
+  color: white;
+  padding: 15px;
+}
+.fixed-action-btn-left .notificationBox li {
+  width: 200px;
+  background: #4080ff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: -250px;
+}
+.fixed-action-btn-left .notificationBox li:last-child {
+  margin-bottom: 0;
+}
 
 .fixed-action-btn.spin-close .btn-large {
   position: relative;
@@ -63,6 +84,112 @@
   transform: rotate(405deg);
 }
 
+/* For left fixed action button */
+.fixed-action-btn._spin-close .btn-large {
+  position: relative;
+}
+.fixed-action-btn._spin-close .btn-large i {
+  color: white;
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.fixed-action-btn._spin-close .btn-large:before {
+  transition: transform 0.3s, opacity 0.3s;
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.64rem;
+  height: 2px;
+  background: white;
+  margin-top: -2px;
+  margin-left: -0.82rem;
+  transform: rotate(0);
+  opacity: 0;
+}
+.fixed-action-btn._spin-close .btn-large:after {
+  transition: transform 0.3s, opacity 0.3s;
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.64rem;
+  height: 2px;
+  background: white;
+  margin-top: -2px;
+  margin-left: -0.82rem;
+  transform: rotate(0);
+  opacity: 0;
+}
+.fixed-action-btn._spin-close.active .btn-large i {
+  opacity: 0;
+}
+.fixed-action-btn._spin-close.active .btn-large:before {
+  opacity: 1;
+  transform: rotate(135deg);
+}
+.fixed-action-btn._spin-close.active .btn-large:after {
+  opacity: 1;
+  transform: rotate(405deg);
+}
+
+.pulse {
+  overflow: initial;
+  position: fixed;
+}
+.pulse::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 15px;
+  left: 0px;
+  background-color: #ff3d00;
+  border-radius: 50%;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s;
+  transition: opacity .3s, transform .3s, -webkit-transform .3s;
+  -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+          animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+  z-index: -1;
+}
+@-webkit-keyframes pulse-animation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+@keyframes pulse-animation {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 530px) and (orientation: portrait) {
   .Footer .btn-floating {
     width: 30px;
@@ -86,6 +213,14 @@
   .fixed-action-btn-left {
     width: 42px;
     height: 57px;
+  }
+  .fixed-action-btn-left .notificationBox {
+    left: 45px;
+    bottom: 45px;
+  }
+  .pulse::before {
+    width: 42px;
+    height: 42px;
   }
 }
 @media only screen and (min-height: 270px) and (max-height: 480px) and (orientation: landscape) {
@@ -111,5 +246,13 @@
   .fixed-action-btn-left {
     width: 42px;
     height: 57px;
+  }
+  .fixed-action-btn-left .notificationBox {
+    left: 45px;
+    bottom: 45px;
+  }
+  .pulse::before {
+    width: 42px;
+    height: 42px;
   }
 }

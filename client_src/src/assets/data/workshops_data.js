@@ -86,7 +86,7 @@ export default {
           </ol>
           <br />
           <h6 className="amber-text">Registration link :-</h6>
-          <a href="https://goo.gl/ZC9BBx" target="_blank" rel="noopener noreferrer">CLICK HERE</a>
+          <p><a href="https://goo.gl/ZC9BBx" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Register</a></p>
        </div>
       ),
       name: "CYBER SECURITY WORKSHOP",
@@ -94,6 +94,7 @@ export default {
       date: "10th - 11th February, 2018",
       fee: "1000",
       img: require('../images/workshops/cyber_security.jpeg'),
+      pdf: '',
       contacts: ["Prashant Upadhyay ( +91 9051739884 )","Barun Kumar Singh ( +91 8348591468 )"],
       faculty: ["Prof. Rajib Saha ( +91 9830373904 )"]
     }
