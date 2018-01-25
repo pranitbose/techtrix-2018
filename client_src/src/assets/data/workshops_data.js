@@ -18,10 +18,13 @@ export default {
             <li>Control a Relay Switch by texting from your Phone.</li>
           </ol>
           <br />
-          <h6 className="amber-text">COMPETITION :-</h6>
+          <h6 className="amber-text">Competition :-</h6>
           <p>After the hands on theory and practical experience from the workshop, a competition will be conducted for the participants.</p>
-          <h6 className="amber-text">CERTIFICATE DISTRIBUTION :-</h6>
+          <h6 className="amber-text">Certificate Distribution :-</h6>
           <p>On behalf of Techtron Technologies Certificate of Merit will be provided to all Zonal Round Winners and Certificate of Participation will be provided to all the Zonal Round Participants (Excluding Merit Participants).</p>
+          <br />
+          <h6 className="amber-text">Registration link :-</h6>
+          <p><a href="https://goo.gl/forms/TIhv2CUsPzpBMoAv1" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Register</a></p>
         </div>
       ),
       name: "IOT WORKSHOP",
@@ -37,10 +40,13 @@ export default {
       id: 2,
       info: (
         <div className='workshopInfo'>
-          <h6 className="amber-text">COMPETITION :-</h6>
+          <h6 className="amber-text">Competition :-</h6>
           <p>After the hands on theory and practical experience from the workshop, a competition will be conducted for the participants.</p>
-          <h6 className="amber-text">CERTIFICATE DISTRIBUTION :-</h6>
+          <h6 className="amber-text">Certificate Distribution :-</h6>
           <p>On behalf of Techtron Technologies Certificate of Merit will be provided to all Zonal Round Winners and Certificate of Participation will be provided to all the Zonal Round Participants (Excluding Merit Participants).</p>
+          <br />
+          <h6 className="amber-text">Registration link :-</h6>
+          <p><a href="https://goo.gl/forms/TIhv2CUsPzpBMoAv1" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Register</a></p>
         </div>
       ),
       name: "ANDROID WORKSHOP",
@@ -56,10 +62,13 @@ export default {
       id: 3,
       info: (
         <div className='workshopInfo'>
-          <h6 className="amber-text">COMPETITION :-</h6>
+          <h6 className="amber-text">Competition :-</h6>
           <p>After the hands on theory and practical experience from the workshop, a competition will be conducted for the participants.</p>
-          <h6 className="amber-text">CERTIFICATE DISTRIBUTION :-</h6>
+          <h6 className="amber-text">Certificate Distribution :-</h6>
           <p>On behalf of Techtron Technologies Certificate of Merit will be provided to all Zonal Round Winners and Certificate of Participation will be provided to all the Zonal Round Participants (Excluding Merit Participants).</p>
+          <br />
+          <h6 className="amber-text">Registration link :-</h6>
+          <p><a href="https://goo.gl/forms/TIhv2CUsPzpBMoAv1" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Register</a></p>
         </div>
       ),
       name: "PYTHON WORKSHOP",
@@ -86,7 +95,9 @@ export default {
           </ol>
           <br />
           <h6 className="amber-text">Registration link :-</h6>
-          <p><a href="https://goo.gl/ZC9BBx" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Register</a></p>
+          <p><a href="https://goo.gl/forms/TIhv2CUsPzpBMoAv1" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Register</a></p>
+          <h6 className="amber-text">Online Payment link :-</h6>
+          <p><a href="https://goo.gl/KMLJ2u" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer" style={{fontFamily: 'orbitron'}}>Pay Online</a></p>
        </div>
       ),
       name: "CYBER SECURITY WORKSHOP",

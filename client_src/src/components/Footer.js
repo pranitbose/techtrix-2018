@@ -31,8 +31,8 @@ class Footer extends Component {
           <a className='btn-floating btn-large deep-orange accent-3'><i className='material-icons'>notifications</i></a>
           <ul className='notificationBox'>
             <li>Techtrix 2018 Website has been officially launched!</li>
-            <li>Workshop Posters and Details are now available as downloadable content.</li>
-            <li>Event Rules are not finalised and are subject to changes.</li>
+            <li>Workshop Registration Form links are now available on the Workshops page. <a href="https://goo.gl/forms/TIhv2CUsPzpBMoAv1" className='waves-effect waves-light btn amber darken-2 black-text' target="_blank" rel="noopener noreferrer">Register</a></li>
+            <li>Detailed Event Rules can now be downloaded from the respective Event's page under the General Rules section.</li>
           </ul>
         </div>
       </div>

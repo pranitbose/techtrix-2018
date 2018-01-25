@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Modal } from 'react-materialize';
 import $ from 'jquery';
 import '../assets/css/Sponsors.css';
 
@@ -20,6 +21,11 @@ class Sponsors extends Component {
         <div className='contentWrap'>
           <div className='container'>
             <div className='sponsorsWrap'>
+              <Modal
+                header='Sponsor Us Form'
+                trigger={<button className='waves-effect waves-light btn amber darken-2 black-text' style={{fontFamily: 'orbitron-med'}}>Sponsor Us</button>}>
+                <iframe title="Sponsor Us Form" src="https://docs.google.com/forms/d/e/1FAIpQLScn85xF9YQaSWxQSqE2wZOlAOV6bcPBNGPI6gVQ0ti_q979WA/viewform?embedded=true" width="100%" height="500" frameBorder="0" marginHeight="0" marginWidth="0">Loading...</iframe>
+              </Modal>
               <h2 className='amber-glow-text'>Our Previous Year Sponsors</h2>
               {sponsors.map((i) =>
                 <div key={i[0]} className='row'>

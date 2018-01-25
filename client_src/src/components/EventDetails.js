@@ -51,8 +51,12 @@ class EventDetails extends Component {
                       <li key={i}>{rule}</li>
                     )}
                   </ul>
-                  <p>For detailed Rules, refer to the downloadable rule-book below.</p>
-                  <a className='waves-effect waves-light btn disabled'>Download Rules</a>
+                  {_event.rulesPdf !== '' &&
+                    <p>For detailed Rules, refer to the downloadable rule-book below.</p>
+                  }
+                  {_event.rulesPdf !== '' &&
+                    <a href={_event.rulesPdf} className='waves-effect waves-light btn'>Download Rules</a>
+                  }
                 </CollapsibleItem>
                 <CollapsibleItem header='Registration Details' icon='person_add'>
                   <p><strong>Event Registration Fees:</strong>&nbsp;{_event.registrationDetails}</p>

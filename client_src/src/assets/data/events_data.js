@@ -10,7 +10,7 @@ export default {
     {id: 2, name: 'Kick-O-Bot', icon: 'robo-soccer'},
     {id: 3, name: 'Sprint-O-Bot', icon: 'robo-race'},
     {id: 4, name: 'Span-O-Bot', icon: 'robo-race'},
-    {id: 5, name: 'Line Follower', icon: 'line-follower'},
+    {id: 5, name: 'Track-O-Bot', icon: 'line-follower'},
     {id: 6, name: 'Maze Solver', icon: 'maze-solver'},
     {id: 7, name: 'Battle-it-Lite', icon: 'robo-war-light'}
   ],
